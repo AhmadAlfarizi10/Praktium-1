@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head> <!-- sebagai awalan untuk membuat header-->
+    <title>Formulir Registrasi</title><!--sebagai judul yang akan tampil di web-->
+</head><!--akhir dari pembuatan header-->
+<body><!--sebagai awalan dalam membuat isi atau bagian utama pada web-->
+
+    <h2><strong>Registrasi Akun</strong></h2> <!--h2 adalah font yang di sebut Sub Heading dan strong digunakan agar kata yang di buat menjadi bold-->
+<form><!--untuk membuat form-->
+
+  <fieldset><!--digunakan untuk membuat sebuah kotak an atau bingkai di dalam form-->
+
+        <legend>Formulir Registrasi</legend><!--Judul di fieldset nya-->
+        <p><!--digunakan untuk bisa menampilkan text-->
+            <label>Masukkan Nama:</label><!--label digunakan untuk memberikan keterangan dalam text-->
+            <input type="text" name="nama" placeholder="Ahmad Alfarizi" /><!--input digunakan agar bisa menginput sesuai type apa yang diinginkan.-->
+        </p>
+		<p>
+            <label>Masukkan NIM:</label>
+            <input type="text" name="NIM" placeholder="202332009" /> <!--Placeholder digunakan untuk menampilkan kata didalam kolom yang akan diiisi. textnya terlihat seperti bayangan didalam kolom-->
+        </p>
+        <p>
+            <label>Masukkan email</label>
+             <input type="text" name="email" placeholder="ajigan022@gmail.com" />
+        </p>
+
+        <p>
+            <label>Jenis Kelamin</label><br> <!--br digunakan untuk membuat spasi kebawah-->
+            <input type="radio" name="Jenis Kelamin" value="Laki-Laki" /> Laki-Laki
+            <input type="radio" name="Jenis Kelamin" value="Perempuan" /> Perempuan
+        </p>
+
+        <p>
+            <label>Agama</label>
+            <select name="Agama"><!--select digunakan untuk membuat daftar-->
+                <option value="Islam">Islam</option> <!--option digunakan untuk membuat daftar yang akan berbentuk panah kebawah-->
+                <option value="Kristen">Kristen</option>
+                <option value="Katholik">Katholik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghucu">Konghucu</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Masukkan Password</label>
+            <input type="text" name="Password"  placeholder="admin123" required>
+        </p>
+
+        <p>
+            <label>Konfirmasi Password</label>
+            <input type="text" name="konfirmasi" required><!--required di gunakan untuk memerintahkan bahwa bagian form ini wajib diisi-->
+        </p>
+        <p>
+            <input type="submit" name="Daftar" value="Daftar" /><!--submit digunakan untuk menyimpan atau mengsubmit semua yang telah diinput ke Server-->
+        </p>
+  </fieldset>
+</form>
+</body>
+</html>
